@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <table>
+            <tr>
+                <div id="screen"></div>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="del()">Del</button></td>
+                <td><button type="button" onclick="div()">/</button></td>
+                <td><button type="button" onclick="mul()">*</button></td>
+                <td><button type="button" onclick="sub()">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="addSeven()">7</button></td>
+                <td><button type="button" onclick="addEight()">8</button></td>
+                <td><button type="button" onclick="addNine()">9</button></td>
+                <td rowspan="2"><button type="button" id="add" onclick="add()">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="addFour()">4</button></td>
+                <td><button type="button" onclick="addFive()">5</button></td>
+                <td><button type="button" onclick="addSix()">6</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="addOne()">1</button></td>
+                <td><button type="button" onclick="addTwo()">2</button></td>
+                <td><button type="button" onclick="addThree()">3</button></td>
+                <td rowspan="2"><button type="button" id="equal" onclick="equalTo()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" id="zero" onclick="addZero()">0</button></td>
+                <td><button type="button" onclick="dot()">.</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src = "Script.js"></script>
+    <footer>Subhajit Maity  |   Basic Calculator    |   1st mini project</footer>
+</body>
+</html>
